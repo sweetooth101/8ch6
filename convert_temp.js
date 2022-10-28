@@ -40,12 +40,12 @@ const convertTemp = () => {
 	}
 	else{
 		if($("#to_celsius").checked){
-			$("#degrees_computed").value =  calculateCelsius(val)
+			$("#degrees_computed").value =  calculateCelsius(val).toFixed(0)
 			$("#message").remove();                                                                                                             
 		}
 		else {    
 
-			$("#degrees_computed").value =  calculateFahrenheit(val)
+			$("#degrees_computed").value =  calculateFahrenheit(val).toFixed(0)
 			$("#message").remove();                                                                                             
 		}
 	}
